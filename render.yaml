@@ -1,9 +1,6 @@
 services:
   - type: web
     name: tron3d
-    env: static
-    staticPublishPath: .
-    headers:
-      - path: /*
-        name: Cache-Control
-        value: no-cache
+    env: node
+    buildCommand: ""
+    startCommand: node server.js
